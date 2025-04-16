@@ -3,7 +3,7 @@ import BellIcon from "../Icons/BellIcon";
 import CaretUp from "../Icons/CaretUp";
 import LogoIcon from "../Icons/LogoIcon";
 import SearchIcon from "../Icons/SearchIcon";
-// import DesktopDropdown from "./DesktopDropdown";
+import DesktopDropdown from "./DesktopDropdown";
 
 export default function Navigation() {
   return (
@@ -28,7 +28,7 @@ export default function Navigation() {
                   <CaretUp className="size-3.5 rotate-180 fill-gray-600 transition-all duration-300 group-hover:rotate-360 group-hover:fill-black" />
                 </span>
               )}
-              {/* {link.dropdown && <DesktopDropdown links={link.dropdownLinks} />} */}
+              {link.dropdown && <DesktopDropdown links={link.dropdownLinks} />}
             </li>
           ))}
         </ul>
