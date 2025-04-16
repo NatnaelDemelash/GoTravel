@@ -3,7 +3,7 @@ import HeroBenefit from "./HeroBenefit";
 
 export default function Hero() {
   return (
-    <section className="relative m-auto max-w-[108rem]">
+    <section className="relative m-auto max-w-[108rem] pb-200">
       <div className="relative flex items-center justify-center rounded-[2.25rem] bg-[url('/public/hero.webp')] bg-cover bg-bottom pb-[56.25%]">
         <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-center text-center">
           <div>
@@ -16,11 +16,11 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* <ul>
+        <ul className="absolute -bottom-23 mx-21.5 flex items-center gap-x-18 rounded-[1.5rem] bg-white px-16 py-18 drop-shadow-2xl">
           {heroBenefits.map((benefit) => (
-            <HeroBenefit benefit={benefit} key={benefit.id} />
+            <HeroBenefit benefit={benefit} />
           ))}
-        </ul> */}
+        </ul>
       </div>
     </section>
   );
