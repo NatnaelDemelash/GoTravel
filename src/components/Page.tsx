@@ -1,13 +1,9 @@
-import { ReactElement } from "react"
+import { ReactElement } from "react";
 
 interface PageProps {
-  children: ReactElement
+  children: ReactElement[];
 }
 
-export default function Page({children} : PageProps) {
-  return (
-    <div>
-      {children}
-    </div>
-  )
+export default function Page({ children }: PageProps) {
+  return <div>{children}</div>;
 }
